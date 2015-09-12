@@ -1,20 +1,13 @@
 import csv
+
 import numpy
-import scipy
-import matplotlib.pyplot as plt
+from sklearn import neighbors
 from sklearn import preprocessing
 from sklearn.cross_validation import train_test_split
-from sklearn import metrics
-from sklearn import neighbors
-import knnplots
 from sklearn.naive_bayes import GaussianNB
 
-from sklearn import cross_validation
-from sklearn.grid_search import GridSearchCV
-
-
-#Code common to all modeles from module 3 onwards
-##NB. The X and yTransformed variables come from the preprocessing in the previous module.
+# Code common to all modeles from module 3 onwards
+# NB. The X and yTransformed variables come from the preprocessing in the previous module.
 fileName = "wdbc.csv"
 fileOpen = open(fileName, "rU")
 csvData = csv.reader(fileOpen)
